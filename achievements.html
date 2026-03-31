@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Achievements | Architect’s Ledger</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#1b1c15",
+              "on-surface": "#1b1c1c",
+              "primary-fixed": "#fbd7fb",
+              "background": "#fbf9f8",
+              "surface-container": "#f0eded",
+              "on-surface-variant": "#4c444b",
+              "surface-container-highest": "#e4e2e1",
+              "primary-container": "#4a314d",
+              "outline-variant": "#cfc3cb",
+              "on-secondary-fixed-variant": "#4e4446",
+              "surface-container-low": "#f6f3f2",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#d1c3c5",
+              "on-primary-fixed-variant": "#583e5b",
+              "inverse-surface": "#303030",
+              "primary-fixed-dim": "#debcdf",
+              "on-tertiary-container": "#a4a499",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#c7c7bc",
+              "surface-dim": "#dcd9d9",
+              "on-primary-container": "#ba99bb",
+              "error": "#ba1a1a",
+              "secondary": "#665c5e",
+              "on-background": "#1b1c1c",
+              "surface-tint": "#715573",
+              "inverse-on-surface": "#f3f0f0",
+              "surface-bright": "#fbf9f8",
+              "on-secondary-container": "#6c6264",
+              "tertiary-fixed": "#e4e3d7",
+              "on-tertiary-fixed-variant": "#46473f",
+              "on-primary": "#ffffff",
+              "outline": "#7d747c",
+              "secondary-fixed": "#eedfe1",
+              "surface-variant": "#e4e2e1",
+              "surface": "#fbf9f8",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-primary-fixed": "#29132d",
+              "on-error-container": "#93000a",
+              "tertiary-container": "#393a32",
+              "secondary-container": "#eedfe1",
+              "on-secondary-fixed": "#211a1b",
+              "tertiary": "#23251d",
+              "primary": "#331c36",
+              "inverse-primary": "#debcdf",
+              "surface-container-high": "#eae8e7"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #fbf9f8;
+        color: #1b1c1c;
+        -webkit-font-smoothing: antialiased;
+      }
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+      }
+      .glass-nav {
+        background: rgba(251, 249, 248, 0.7);
+        backdrop-filter: blur(20px);
+      }
+      .silk-button {
+        background: linear-gradient(to right, #331c36, #4a314d);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200/15 dark:border-slate-800/15 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-blue-900 dark:text-blue-100 font-['Manrope']">
+                Architect’s Ledger
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Manrope'] font-bold tracking-tight uppercase text-sm">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="about.html">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="experience.html">Experience</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="projects.html">Projects</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="skills.html">Skills</a>
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1" href="achievements.html">Achievements</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-600 cursor-pointer p-2 hover:bg-slate-50 rounded-md transition-all">mail</span>
+<span class="material-symbols-outlined text-slate-600 cursor-pointer p-2 hover:bg-slate-50 rounded-md transition-all">call</span>
+<button class="bg-primary text-white px-6 py-2 text-sm font-bold uppercase tracking-wider rounded-md hover:opacity-90 transition-all active:scale-95">Contact</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 min-h-screen px-8 max-w-7xl mx-auto">
+<header class="mb-24 relative">
+<div class="absolute -left-12 top-0 text-outline-variant opacity-10 select-none">
+<span class="text-9xl font-headline font-extrabold">ALPHA</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter max-w-3xl leading-[1.1]">
+                Proven Performance &amp; <span class="text-primary">Strategic Milestones</span>.
+            </h1>
+<p class="mt-8 font-body text-xl text-secondary max-w-2xl leading-relaxed">
+                A quantitative look at project coordination, operational excellence, and competitive leadership achievements by Nishtha Anand.
+            </p>
+</header>
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-32">
+<div class="lg:col-span-4 sticky top-40 space-y-8">
+<div class="p-8 bg-surface-container-low rounded-lg border-l-4 border-primary">
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Core Metric</span>
+<div class="text-5xl font-headline font-extrabold text-on-surface mb-2">30%</div>
+<p class="text-secondary font-body text-sm">Improvement in SaaS delivery reliability through streamlined orchestration.</p>
+</div>
+<div class="p-8 bg-surface-container-low rounded-lg border-l-4 border-tertiary">
+<span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold mb-2 block">Stakeholder Satisfaction</span>
+<div class="text-5xl font-headline font-extrabold text-on-surface mb-2">40%</div>
+<p class="text-secondary font-body text-sm">Enhanced clarity in reporting and milestone tracking for global partners.</p>
+</div>
+</div>
+<div class="lg:col-span-8 space-y-12">
+<div class="group relative p-10 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+<div class="absolute right-0 top-0 w-32 h-32 bg-secondary-fixed/20 rounded-bl-full translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform"></div>
+<div class="flex items-start gap-6 relative z-10">
+<div class="bg-primary p-4 rounded-lg text-white">
+<span class="material-symbols-outlined text-3xl">trending_up</span>
+</div>
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold">Workforce Excellence</span>
+<h3 class="font-headline text-2xl font-bold mt-2 mb-4">Top 10% Performance Tier</h3>
+<p class="text-secondary leading-relaxed">Recognized within the elite 10% of team performance at <span class="text-on-surface font-semibold">Radical Minds</span>, consistently exceeding KPIs in technical project support and system coordination.</p>
+</div>
+</div>
+</div>
+<div class="group relative p-10 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+<div class="absolute right-0 top-0 w-32 h-32 bg-secondary-fixed/20 rounded-bl-full translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform"></div>
+<div class="flex items-start gap-6 relative z-10">
+<div class="bg-secondary p-4 rounded-lg text-white">
+<span class="material-symbols-outlined text-3xl">military_tech</span>
+</div>
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Radical Minds</span>
+<h3 class="font-headline text-2xl font-bold mt-2 mb-4">Employee of the Month</h3>
+<p class="text-secondary leading-relaxed">Awarded for resolving complex customer queries and maintaining a consistent 5-star rating among a high-volume client base of 50+ accounts. Recognized for standout service delivery.</p>
+</div>
+</div>
+</div>
+<div class="group relative p-10 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+<div class="absolute right-0 top-0 w-32 h-32 bg-tertiary-fixed/20 rounded-bl-full translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform"></div>
+<div class="flex items-start gap-6 relative z-10">
+<div class="bg-tertiary p-4 rounded-lg text-white">
+<span class="material-symbols-outlined text-3xl">emoji_events</span>
+</div>
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-tertiary font-bold">National Competition</span>
+<h3 class="font-headline text-2xl font-bold mt-2 mb-4">Youth-Vaganza Runner-up</h3>
+<p class="text-secondary leading-relaxed">Secured the second position in a high-stakes competition featuring over <span class="text-on-surface font-semibold">500+ participants</span>, demonstrating exceptional presentation, strategy, and leadership skills.</p>
+</div>
+</div>
+</div>
+<div class="group relative p-10 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden">
+<div class="absolute right-0 top-0 w-32 h-32 bg-primary-fixed/20 rounded-bl-full translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform"></div>
+<div class="flex items-start gap-6 relative z-10">
+<div class="bg-outline p-4 rounded-lg text-white">
+<span class="material-symbols-outlined text-3xl">workspace_premium</span>
+</div>
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-outline font-bold">Academic &amp; Cultural</span>
+<h3 class="font-headline text-2xl font-bold mt-2 mb-4">Inter-house Champion</h3>
+<p class="text-secondary leading-relaxed">Multiple-time winner of inter-house competitions, showcasing versatility in teamwork, public speaking, and rapid problem-solving within organized academic frameworks.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="aspect-video rounded-xl overflow-hidden bg-surface-container-high group relative cursor-pointer">
+<img alt="Performance Metrics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern office dashboard showing abstract growth charts and system performance metrics on a high-resolution screen in a sleek studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALUgAmz171GrA587AMpr8CYuJJyBAMi4t3hs629al8smShMMnLtgtRfu236e5IhPbF-e-LMatjNvLFlZsUjhkIVeCmRG0c2onLOxOkCMlkYaxvcitHPHKSIBh6usYzsI5PpGs76_PB6K_XzBSERxkCO9uo5uGmpm9KIjYGoPQaDG_kh_gY4Ls4HMt45mRHeu9lZ8M1qTIZ1vSVJHWvVZD8wKTRfSuxoiDVAwW9p_imGKNHQG5opa-7jJnq6AEuPwmHsjMdCgqqsj0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="text-white font-label text-sm uppercase tracking-widest">View Performance Audit 2023</p>
+</div>
+</div>
+<div class="aspect-video rounded-xl overflow-hidden bg-surface-container-high group relative cursor-pointer">
+<img alt="Team Collaboration" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A professional team collaborating around a large table with architectural blueprints and digital devices in a brightly lit modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjFSAEQ3oQN6WNCPoYDxWjnCU160JUjXOIffwWD7YLhEgbURtuKBYkB0v9-6xytZo1-Yod6vVhh0HPnhkW8f7T-npVKPvhaPfaf2wm1BySHWzct6aZVOWP6Qav_kesfbkMDoMR_RGr4oAMAHtaItvqwW3lq4haH12Z2XhKY2DcnVAL4k1eu8X-RqaAY11v3kZ0o1G6rC0aAbHZ0wfRfaXc42z4PJAq362IeKz10rmEVbAqw1TLLgpN9HsZC6VwAaTbCzpG1Bz7Nj8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-tertiary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<p class="text-white font-label text-sm uppercase tracking-widest">Leadership Portfolio Highlights</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 px-8 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-800 pt-12">
+<div class="space-y-4">
+<div class="font-['Space_Grotesk'] font-medium text-xs uppercase tracking-widest text-blue-700 dark:text-blue-400">
+                    Architect’s Ledger
+                </div>
+<p class="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 max-w-xs">
+                    © 2024 Precision Orchestrator. Designed for technical excellence.
+                </p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-center">
+<a class="text-slate-400 dark:text-slate-600 hover:text-blue-500 font-['Inter'] text-sm hover:translate-x-1 transition-transform" href="#">LinkedIn</a>
+<a class="text-slate-400 dark:text-slate-600 hover:text-blue-500 font-['Inter'] text-sm hover:translate-x-1 transition-transform" href="#">Email</a>
+<a class="text-slate-400 dark:text-slate-600 hover:text-blue-500 font-['Inter'] text-sm hover:translate-x-1 transition-transform" href="#">Phone</a>
+<a class="text-slate-400 dark:text-slate-600 hover:text-blue-500 font-['Inter'] text-sm hover:translate-x-1 transition-transform" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+</body></html>
